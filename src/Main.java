@@ -47,7 +47,7 @@ public static int day(int deliveryDistance) {
         System.out.println("Задание 3");
         int deliveryDistance=95;
         if (day(deliveryDistance)==0) {
-            System.out.println("Доставки нет, слишком далеко.");
+            System.out.println("Доставки нет, слишком далеко это.");
         }else{
             System.out.println("Потребуется дней на доствку: " + day(deliveryDistance));
         }
