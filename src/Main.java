@@ -16,6 +16,7 @@ public class Main {
         int year = 2024;
         opredelenieVisokosnosti(year);
 
+
     }
 
 
