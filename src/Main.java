@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void opredelenieVisokosnosti(int year)
+    public static void definitionLeapYear(int year)
 
     {
         if (year > 1584 && ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)) {
@@ -10,7 +10,7 @@ public class Main {
         }
     }
 
-public static void opredelenieOsYear(int clientOs,int clientDeviceYear) {
+public static void definitionOsYear(int clientOs,int clientDeviceYear) {
     if (clientDeviceYear < 2015 && clientOs == 0) {
         System.out.println("Установите облегченную версию приложения для iOS по ссылке.");
     } else if (clientDeviceYear < 2015 && clientOs != 0) {
@@ -23,7 +23,7 @@ public static void opredelenieOsYear(int clientOs,int clientDeviceYear) {
         System.out.println("Установите версию приложеия для Andrioid по ссылке.");
     }
 }
-public static int day(int deliveryDistance) {
+public static int deliveryDay(int deliveryDistance) {
     int day;
     if (deliveryDistance > 100) {
         day=0;
@@ -41,15 +41,15 @@ public static int day(int deliveryDistance) {
         System.out.println("Hello, World!");
         System.out.println("Задание 1");
         int year = 2024;
-        opredelenieVisokosnosti(year);
+        definitionLeapYear(year);
         System.out.println("Задание 2");
-        opredelenieOsYear(1,2013);
+        definitionOsYear(1,2013);
         System.out.println("Задание 3");
         int deliveryDistance=95;
-        if (day(deliveryDistance)==0) {
+        if (deliveryDay(deliveryDistance)==0) {
             System.out.println("Доставки нет, слишком далеко.");
         }else{
-            System.out.println("Потребуется дней на доствку: " + day(deliveryDistance));
+            System.out.println("Потребуется дней на доствку: " + deliveryDay(deliveryDistance));
         }
         }
 
